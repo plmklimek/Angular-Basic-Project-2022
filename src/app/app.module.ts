@@ -7,18 +7,23 @@ import { FightersComponent } from './fighters/fighters.component';
 import { FightsComponent } from './fights/fights.component';
 import { SettingsComponent } from './settings/settings.component';
 
+import { Store, StoreModule } from '@ngrx/store';
+import { settingReducer } from './reducers/setting.reducer';
 @NgModule({
   declarations: [
     AppComponent,
     FightersComponent,
     FightsComponent,
-    SettingsComponent
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({
+      setting: settingReducer,
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
