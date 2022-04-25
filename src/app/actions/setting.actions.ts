@@ -6,7 +6,7 @@ export const ADD_SETTING = '[SETTING] Add';
 export const REMOVE_SETTING = '[SETTING] Remove';
 
 export const AddSetting = createAction(
-  '[SETTING] Add',
+  '[Setting] Add',
   props<{ payload: Setting }>()
 );
 export const RemoveSetting = createAction(

@@ -9,12 +9,16 @@ import { SettingsComponent } from './settings/settings.component';
 
 import { Store, StoreModule } from '@ngrx/store';
 import { settingReducer } from './reducers/setting.reducer';
+import { ReadComponent } from './read/read.component';
+import { CreateComponent } from './create/create.component';
 @NgModule({
   declarations: [
     AppComponent,
     FightersComponent,
     FightsComponent,
     SettingsComponent,
+    ReadComponent,
+    CreateComponent,
   ],
   imports: [
     BrowserModule,

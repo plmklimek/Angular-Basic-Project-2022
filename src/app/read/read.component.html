@@ -1,0 +1,8 @@
+<div class="right" *ngIf="settings">
+  <h3>Settings</h3>
+  <ul>
+    <li *ngIf="settings | async as setting">
+      {{ setting.text }}
+    </li>
+  </ul>
+</div>

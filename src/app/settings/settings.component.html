@@ -1,2 +1,6 @@
-<input type="text" name="setting_value" id="setting_value" />
-<input type="button" value="ustaw wartość" onclick="" />
+<input type="text" name="setting_value" id="setting_value" #name />
+<input
+  type="button"
+  value="ustaw wartość"
+  (click)="changeSetting(name.value, name.value)"
+/>
