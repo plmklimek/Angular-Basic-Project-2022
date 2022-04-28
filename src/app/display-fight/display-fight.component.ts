@@ -10,10 +10,10 @@ import { Fight } from '../models/fight.model';
 export class DisplayFightComponent implements OnInit {
   URI = 'https://localhost:5001/api/fight';
   constructor(private http: HttpClient) {
-    this.loadFighters();
+    this.loadFights();
   }
   fights = new Array<Fight>();
-  loadFighters() {
+  loadFights() {
     this.http.get<Fight[]>(this.URI).subscribe((response) => {
       console.log(response);
       this.fights = response;

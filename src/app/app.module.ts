@@ -16,7 +16,19 @@ import { CreateFighterComponent } from './create-fighter/create-fighter.componen
 import { DisplayFighterComponent } from './display-fighter/display-fighter.component';
 import { DisplayFightComponent } from './display-fight/display-fight.component';
 import { CreateFightComponent } from './create-fight/create-fight.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+const materialModules = [
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatFormFieldModule,
+  MatInputModule,
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +50,8 @@ import { FormsModule } from '@angular/forms';
     }),
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
+    ...materialModules,
   ],
   providers: [],
   bootstrap: [AppComponent],
