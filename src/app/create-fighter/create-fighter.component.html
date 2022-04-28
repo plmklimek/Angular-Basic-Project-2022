@@ -1,1 +1,7 @@
-<p>create-fighter works!</p>
+<label for="name">Imie</label>
+<input type="text" name="name" id="name" [(ngModel)]="fighter.name" />
+<label for="surname">Nazwisko</label>
+<input type="text" name="surname" id="surname" [(ngModel)]="fighter.surname" />
+<label for="age">Wiek</label>
+<input type="text" name="age" id="age" [(ngModel)]="fighter.age" />
+<input type="button" value="dodaj" (click)="addFighter()" />

@@ -16,6 +16,7 @@ import { CreateFighterComponent } from './create-fighter/create-fighter.componen
 import { DisplayFighterComponent } from './display-fighter/display-fighter.component';
 import { DisplayFightComponent } from './display-fight/display-fight.component';
 import { CreateFightComponent } from './create-fight/create-fight.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { CreateFightComponent } from './create-fight/create-fight.component';
       setting: settingReducer,
     }),
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
