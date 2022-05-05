@@ -23,6 +23,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 const materialModules = [
   MatDatepickerModule,
   MatNativeDateModule,
@@ -52,6 +54,7 @@ const materialModules = [
     FormsModule,
     BrowserAnimationsModule,
     ...materialModules,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

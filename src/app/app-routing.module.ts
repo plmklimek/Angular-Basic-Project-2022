@@ -12,6 +12,8 @@ const routes: Routes = [
   { path: 'displayfights', component: DisplayFightComponent },
   { path: 'displayfighters', component: DisplayFighterComponent },
   { path: 'settings', component: SettingsComponent },
+  { path: 'settings', component: SettingsComponent },
+  { path: '', redirectTo: '/displayfights', pathMatch: 'full' }, // redirect to `first-component`
 ];
 
 @NgModule({

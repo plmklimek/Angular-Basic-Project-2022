@@ -1,3 +1,6 @@
 <ul *ngFor="let fight of fights">
-  <li></li>
+  <li>
+    <fa-icon [icon]="faPen" (click)="editFight(fight)"></fa-icon
+    ><fa-icon [icon]="faXmark"></fa-icon>
+  </li>
 </ul>
